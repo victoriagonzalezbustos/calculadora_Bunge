@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <img src="" alt="" class="Bunge">
+    <img src="" alt="" class = "carbonNeutral">    
+</header>
+<section class="fondo">
+    <section class="titulo">
+        <h1>Calcula la huella de carbono</h1>
+        <h2>La huella de carbono es un indicador ambiental que cuantifica las emisiones de gases de efecto invernadero (GEI) generadas por un individuo, empresa o actividad.</h2>
+    </section>
+<section class="calculadora">   
+    <div class="contenedor">
+        <ul class="ul">
+            <li class="li ">
+                Barcazas 
+            </li>
+            <li class="li">
+                Camiones
+            </li>
+            <li class="li">
+                Trenes
+            </li>
+            <li class="li">
+                Total
+            </li>
+        </ul>
+        <div class="resultados">
+            <li class="huella">
+                <div class="contenido" >
+                    <h1>Huella Barcazas</h1>
+                    <h2 id="TotalBarcazas">0</h2>
+                    <h3>Co2</h3>
+                </div>
+            </li>
+            <li class="huella">
+                <div class="contenido">
+                    <h1>Huella Camiones</h1>
+                    <h2 id="TotalCamiones">0</h2>
+                    <h3>Co2</h3>
+                </div>
+            </li>
+            <li class="huella">
+                <div class="contenido">
+                    <h1>Huella Trenes</h1>
+                    <h2 id="TotalTrenes">0</h2>
+                    <h3>Co2</h3>
+                </div>
+            </li>
+            <li class="huella total">
+                <div class="contenido">
+                    <h1>Huella Total</h1>
+                    <h2 id="TotalTodo">0</h2>
+                    <h3>Co2</h3>
+                </div>
+            </li>
+        </div>
+        <div class="subcontenedor">
+            <div class="bloque barcazas">
+               <div class="itemForm">
+                   <h2>Toneladas</h2>
+                   <input id="ToneladasBarcazas" type="text" class="form-control campo">
+               </div>
+               <div class="itemForm">
+                   <h2>Km</h2>
+                   <input id="KilometrosBarcazas" type="text" class="form-control campo">
+               </div>
+               <button id="botonBarcaza">
+                Calcular
+               </button >
+            </div>
+            <div class="bloque camiones">
+                <div class="itemForm">
+                    <h2>Km</h2>
+                    <input id="KilometrosCamiones" type="text" class="select campo">
+                </div>
+                <div class="itemForm">
+                    <h2>Tipo</h2>
+                    <select id="TipoCamiones" class=" campo" >
+                        <option value ="Articulado"> Articulado</option>
+                        <option value ="Rigido"> Rigido</option>
+                    </select>
+                </div>
+                <button id="BotonCamiones">
+                 Calcular
+                </button >
+               
+            </div>
+            <div class="bloque">
+                <div class="itemForm">
+                    <h2>Toneladas</h2>
+                    <input id="ToneladasTren" type="text" class="form-control campo">
+                </div>
+                <div class="itemForm">
+                    <h2>Km</h2>
+                    <input id="KilometrosTren" type="text" class="form-control campo">
+                </div>
+                <button id="BotonTren">
+                 Calcular
+                </button >
+               
+            </div>
+            <div class="bloque">
+
+            </div>
+        </div>
+
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
